@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour
          if (instance == null)
          {
                instance = this;
-               DontDestroyOnLoad(gameObject); // Mantiene este objeto al cambiar de escena
          }
          else if (instance != this)
          {
@@ -86,7 +85,7 @@ public class GameManager : MonoBehaviour
    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         // Si el Canvas (y por tanto livesText) es diferente en cada escena, reasignamos el TextMeshProUGUI
-        livesText = FindObjectOfType<TextMeshProUGUI>();
+        //livesText = FindObjectOfType<TextMeshProUGUI>();
 
         // Volvemos a actualizar las vidas en la nueva escena
         UpdateLivesUI();
