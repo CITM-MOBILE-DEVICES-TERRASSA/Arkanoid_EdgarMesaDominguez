@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviour
    public int lives = 3;
    public int score = 0;
 
-   [SerializeField] public TextMeshProUGUI livesText;
-
    public int maxScore = 0;
     
     // Referencia al componente Text del Canvas
