@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
    public static GameManager instance;
    public int lives = 3;
    public int score = 0;
+
+   [SerializeField] public TextMeshProUGUI livesText;
+
+   public int maxScore = 0;
     
     // Referencia al componente Text del Canvas
    [SerializeField] public TextMeshProUGUI livesText;
@@ -73,6 +77,12 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("Lives", lives);
         livesText.text = "Lives: " + lives;
+    }
+
+    public void UpdateMaxScore(){
+         if(score > maxScore){
+               maxScore = score;
+         }
     }
 
    void OnSceneLoaded(Scene scene, LoadSceneMode mode)

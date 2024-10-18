@@ -13,6 +13,8 @@ public class ScoreManager : MonoBehaviour
     // Referencia al objeto de texto en pantalla
     [SerializeField] private TextMeshProUGUI scoreText;
 
+    [SerializeField] public TextMeshProUGUI maxScore;
+
     private void Awake()
     {
         // Configuración del patrón Singleton
@@ -37,6 +39,8 @@ public class ScoreManager : MonoBehaviour
     {
         score += points;
         UpdateScoreText();
+        GameManager.instance.UpdateMaxScore();
+        maxScore.text = "Max Score: " + GameManager.instance.maxScore.ToString();
     }
 
     // Método para actualizar el texto en pantalla
