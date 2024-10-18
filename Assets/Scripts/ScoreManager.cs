@@ -39,8 +39,6 @@ public class ScoreManager : MonoBehaviour
     {
         score += points;
         UpdateScoreText();
-        GameManager.instance.UpdateMaxScore();
-        maxScore.text = "Max Score: " + GameManager.instance.maxScore.ToString();
     }
 
     // Método para actualizar el texto en pantalla
