@@ -7,6 +7,7 @@ public class BrickManager : MonoBehaviour
 {
     public static BrickManager instance;
     public GameObject level2;
+    public GameObject WinScreen;
 
     // Número de ladrillos activos
     private int bricksCount;
@@ -44,7 +45,8 @@ public class BrickManager : MonoBehaviour
         {
             ballScript.ResetBall();
             bricksCount = 30;
-            level2.SetActive(true);
+            WinScreen.SetActive(true);
+            Time.timeScale = 0;
             //LoadNextScene();
         }
     }
@@ -53,5 +55,12 @@ public class BrickManager : MonoBehaviour
     private void LoadNextScene()
     {
         SceneManager.LoadScene(3); 
+    }
+
+    public void LoadLevel2()
+    {
+        level2.SetActive(true);
+        WinScreen.SetActive(false);
+        Time.timeScale = 1;
     }
 }
