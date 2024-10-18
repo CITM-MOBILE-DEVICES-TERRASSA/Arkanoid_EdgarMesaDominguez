@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class BrickManager : MonoBehaviour
 {
     public static BrickManager instance;
+    public GameObject level2;
 
     // Número de ladrillos activos
     private int bricksCount;
+    public Ball ballScript;
 
     private void Awake()
     {
@@ -27,7 +29,7 @@ public class BrickManager : MonoBehaviour
     private void Start()
     {
         // Contar cuántos ladrillos hay en la escena al inicio
-        bricksCount = 2;
+        bricksCount = 30;
         Debug.Log("Bricks count: " + bricksCount);
     }
 
@@ -40,7 +42,10 @@ public class BrickManager : MonoBehaviour
         // Si ya no quedan ladrillos, cambiar a la siguiente escena
         if (bricksCount <= 0)
         {
-            LoadNextScene();
+            ballScript.ResetBall();
+            bricksCount = 30;
+            level2.SetActive(true);
+            //LoadNextScene();
         }
     }
 
