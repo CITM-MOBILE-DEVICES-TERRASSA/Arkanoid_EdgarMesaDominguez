@@ -22,7 +22,7 @@ public class DeathZone : MonoBehaviour
         if (col.gameObject.CompareTag("Ball"))
         {
             Debug.Log("Ball hit DeadZone");
-            FindObjectOfType<GameManager>().loseHealth();
+            GameManager.instance.loseHealth();
         }
     }
 

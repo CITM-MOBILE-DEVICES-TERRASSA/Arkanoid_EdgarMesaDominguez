@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
          if (instance == null)
          {
                instance = this;
+               DontDestroyOnLoad(gameObject); // No destruir el objeto al cargar una nueva escena
          }
          else if (instance != this)
          {
@@ -72,7 +73,6 @@ public class GameManager : MonoBehaviour
     // Método para actualizar el texto de las vidas
     public void UpdateLivesUI()
     {
-        PlayerPrefs.SetInt("Lives", lives);
         livesText.text = "Lives: " + lives;
     }
 

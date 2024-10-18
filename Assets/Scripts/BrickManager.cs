@@ -27,7 +27,7 @@ public class BrickManager : MonoBehaviour
     private void Start()
     {
         // Contar cuántos ladrillos hay en la escena al inicio
-        bricksCount = 30;
+        bricksCount = 2;
         Debug.Log("Bricks count: " + bricksCount);
     }
 
