@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class BrickManager : MonoBehaviour
 {
     public static BrickManager instance;
     public GameObject level2;
     public GameObject WinScreen;
+    [SerializeField] public TextMeshProUGUI screenText;
 
     // Número de ladrillos activos
     private int bricksCount;
+    public int lastScreen = 0;
     public Ball ballScript;
     
 
@@ -32,6 +35,7 @@ public class BrickManager : MonoBehaviour
     {
         // Contar cuántos ladrillos hay en la escena al inicio
         bricksCount = 30;
+        UpdateLastScreenCount();
         Debug.Log("Bricks count: " + bricksCount);
     }
 
@@ -60,8 +64,13 @@ public class BrickManager : MonoBehaviour
 
     public void LoadLevel2()
     {
+        lastScreen = 1;
         level2.SetActive(true);
         WinScreen.SetActive(false);
         Time.timeScale = 1;
+    }
+    public void UpdateLastScreenCount()
+    {
+        screenText.text = "Last Screen: " + lastScreen;
     }
 }

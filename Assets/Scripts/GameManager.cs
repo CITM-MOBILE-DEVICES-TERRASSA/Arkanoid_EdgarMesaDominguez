@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
    //instance 
    public static GameManager instance;
    public int lives = 3;
+   public int lastScreen = 0;
    public int score = 0;
 
    public int maxScore = 0;
