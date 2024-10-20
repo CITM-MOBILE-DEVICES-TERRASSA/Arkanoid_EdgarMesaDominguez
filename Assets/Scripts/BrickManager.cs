@@ -12,6 +12,7 @@ public class BrickManager : MonoBehaviour
     // Número de ladrillos activos
     private int bricksCount;
     public Ball ballScript;
+    
 
     private void Awake()
     {

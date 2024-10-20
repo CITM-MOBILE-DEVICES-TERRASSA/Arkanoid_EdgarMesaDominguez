@@ -11,12 +11,17 @@ public class Ball : MonoBehaviour
     public float nudgeVerticalFactor = 0.5f; // Factor para el movimiento vertical del empujón
     private Vector2 velocity;
     Vector2 startingPosition;
+
+    // Audio
+    private AudioSource audioSource; // Referencia al componente AudioSource
+    public AudioClip collisionSound; // Clip de sonido para las colisiones
     
 
     // Start is called before the first frame update
     void Start()
     {
         rball = GetComponent<Rigidbody2D>(); // Asegúrate de inicializar rball una sola vez aquí
+        audioSource = GetComponent<AudioSource>(); // Inicializa el AudioSource
         startingPosition = transform.position;
         ResetBall();
     }
@@ -33,6 +38,11 @@ public class Ball : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Colisión con objetos
+        // Reproduce el sonido al colisionar
+        if (collisionSound != null)
+        {
+            audioSource.PlayOneShot(collisionSound); // Reproduce el sonido de la colisión
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
