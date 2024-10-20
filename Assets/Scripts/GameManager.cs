@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
          if (instance == null)
          {
                instance = this;
-               DontDestroyOnLoad(gameObject); // No destruir el objeto al cargar una nueva escena
+               //DontDestroyOnLoad(gameObject); // No destruir el objeto al cargar una nueva escena
          }
          else if (instance != this)
          {
