@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager instance; // Instancia única del ScoreManager
 
     // Campo para la puntuación actual
-    private int score = 0;
+    public int score = 0;
     private int maxScore = 0;
 
     // Referencia al objeto de texto en pantalla
@@ -53,7 +53,7 @@ public class ScoreManager : MonoBehaviour
     }
 
     // Método para actualizar el texto en pantalla de la puntuación actual
-    private void UpdateScoreText()
+    public void UpdateScoreText()
     {
         scoreText.text = "Score: " + score.ToString();
     }

@@ -24,6 +24,7 @@ public class NewScene : MonoBehaviour
 
     public void ChangeToScene1()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(1);
     }
 

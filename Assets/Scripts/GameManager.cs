@@ -52,9 +52,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        lives = PlayerPrefs.GetInt("Lives", 100);
+        ScoreManager.instance.score = PlayerPrefs.GetInt("Score", 0);
+        ScoreManager.instance.UpdateScoreText();
+        Debug.Log("Game loaded!");
+        Debug.Log("Lives: " + GameManager.instance.lives);
+        Debug.Log("Lives: " + lives);
         // Inicializamos el texto al comienzo
         Time.timeScale = 1; // Asegurarse de que el tiempo no esté pausado al iniciar
         UpdateLivesUI();
+
     }
     void Update()
     {

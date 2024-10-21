@@ -6660,6 +6660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d42be03b0d4bd4f9bbb7f5fd645f4e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
   scoreText: {fileID: 2080650645}
   maxScoreText: {fileID: 808315565}
 --- !u!4 &1956017319

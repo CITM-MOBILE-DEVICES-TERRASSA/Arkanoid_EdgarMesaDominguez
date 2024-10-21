@@ -1158,6 +1158,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.PlayerPrefsEditor.Editor.csproj" />
+    <ProjectReference Include="Unity.PlayerPrefsEditor.Samples.SampleScene.csproj" />
+    <ProjectReference Include="Unity.PlayerPrefsEditor.EditorResources.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

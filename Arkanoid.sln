@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{2194B913-A83D-7162-538B-103EE6ED2AD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PlayerPrefsEditor.Editor", "Unity.PlayerPrefsEditor.Editor.csproj", "{1050E392-880C-3174-5F0C-1CF70C00EF3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PlayerPrefsEditor.Samples.SampleScene", "Unity.PlayerPrefsEditor.Samples.SampleScene.csproj", "{00D0AAA6-096D-D0E4-C2CF-1F9B071E207F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PlayerPrefsEditor.EditorResources", "Unity.PlayerPrefsEditor.EditorResources.csproj", "{36AF0245-6770-E516-9625-F4595A722C5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +19,18 @@ Global
 		{2194B913-A83D-7162-538B-103EE6ED2AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2194B913-A83D-7162-538B-103EE6ED2AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2194B913-A83D-7162-538B-103EE6ED2AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1050E392-880C-3174-5F0C-1CF70C00EF3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1050E392-880C-3174-5F0C-1CF70C00EF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1050E392-880C-3174-5F0C-1CF70C00EF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1050E392-880C-3174-5F0C-1CF70C00EF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00D0AAA6-096D-D0E4-C2CF-1F9B071E207F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D0AAA6-096D-D0E4-C2CF-1F9B071E207F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D0AAA6-096D-D0E4-C2CF-1F9B071E207F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D0AAA6-096D-D0E4-C2CF-1F9B071E207F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36AF0245-6770-E516-9625-F4595A722C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AF0245-6770-E516-9625-F4595A722C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AF0245-6770-E516-9625-F4595A722C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AF0245-6770-E516-9625-F4595A722C5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

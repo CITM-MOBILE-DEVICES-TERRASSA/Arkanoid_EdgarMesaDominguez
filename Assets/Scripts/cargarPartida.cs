@@ -20,10 +20,7 @@ public class cargarPartida : MonoBehaviour
    public void LoadGame(){
 
      // Cargar la partida
-        Debug.Log("Cargando partida...");
-        GameManager.instance.lives = PlayerPrefs.GetInt("Lives");
-        GameManager.instance.score = PlayerPrefs.GetInt("Score");
-        Debug.Log("Game loaded!");
         SceneManager.LoadScene(1);
-    }
+        Debug.Log("Cargando partida...");
+   }
 }

@@ -26,7 +26,7 @@ public class Pause : MonoBehaviour
     {
         //guardar la partida
         PlayerPrefs.SetInt("Lives", GameManager.instance.lives);
-        PlayerPrefs.SetInt("Score", GameManager.instance.score);
+        PlayerPrefs.SetInt("Score", ScoreManager.instance.score);
         PlayerPrefs.Save(); // Asegurarse de que se guarden los datos
         Debug.Log("Game saved!");
         SceneManager.LoadScene(0);
