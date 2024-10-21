@@ -5764,9 +5764,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 481753622}
-        m_TargetAssemblyTypeName: BrickManager, Assembly-CSharp
-        m_MethodName: LoadLevel2
+      - m_Target: {fileID: 1985240541}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+        m_MethodName: SaveGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

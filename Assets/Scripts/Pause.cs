@@ -29,5 +29,7 @@ public class Pause : MonoBehaviour
         PlayerPrefs.SetInt("Score", GameManager.instance.score);
         PlayerPrefs.Save(); // Asegurarse de que se guarden los datos
         Debug.Log("Game saved!");
+        SceneManager.LoadScene(0);
+
     }
 }
