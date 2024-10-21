@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        lives = PlayerPrefs.GetInt("Lives", 100);
+        lives = PlayerPrefs.GetInt("Lives", 3);
         ScoreManager.instance.score = PlayerPrefs.GetInt("Score", 0);
         ScoreManager.instance.UpdateScoreText();
         Debug.Log("Game loaded!");
