@@ -44,3 +44,6 @@
 
 - Diagrama UML del diseño del juego.
 - Video explicativo mostrando el funcionamiento del juego.
+
+# Vídeo
+[![Ver el video en YouTube](https://img.youtube.com/vi/rDl0zexHj9o/maxresdefault.jpg)](https://www.youtube.com/watch?v=rDl0zexHj9o)
